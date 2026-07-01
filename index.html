@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa à venda no Siena - Bairro Esmeralda, Cascavel/PR</title>
+<meta name="description" content="Casa à venda em Cascavel/PR. Venda direta com o proprietário.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Casa à venda no Siena - Bairro Esmeralda, Cascavel/PR">
+<meta property="og:description" content="Venda direta com o proprietário. Veja fotos, localização e detalhes do imóvel.">
+<meta property="og:image" content="https://casaidealcascavel.github.io/imovel/fotos/capa.jpg">
+<meta property="og:url" content="https://casaidealcascavel.github.io/imovel/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+
+  <style>
+/* ============================================================
+   VARIÁVEIS
+   ============================================================ */
+:root {
+
+--ink:        #243444;  /* Cor principal dos textos */
+--paper:      #F3F5F7;  /* Fundo principal do site */
+--paper-2:    #E7EBEF;  /* Fundo secundário (placeholders, áreas de apoio e detalhes) */
+--cypress:    #2F5E8B;  /* Azul principal (botões, links, destaques) */
+--cypress-2:  #234A6C;  /* Azul escuro (hover, títulos secundários, localização) */
+--brass:      #5E86AE;  /* Azul claro (detalhes, textos auxiliares e elementos decorativos) */
+--sand:       #D8DEE6;  /* Cinza claro (fundos de imagens vazias e áreas neutras) */
+--white:      #FFFFFF;  /* Branco puro (cards, formulários e caixas destacadas) */
+--line:       rgba(36,52,68,.12); /* Cor das bordas e divisórias do site */
+--maxw:       1080px; /* Largura máxima do conteúdo */
+
+  /* Espaçamentos reutilizáveis */
+  --gap-sm:  8px;
+  --gap-md:  24px;
+  --gap-lg:  48px;
+  --gap-xl:  64px;
+
+  /* Tipografia */
+  --font-serif:  'Fraunces', serif;
+  --font-sans:   'Work Sans', sans-serif;
+  --font-mono:   'IBM Plex Mono', monospace;
+
+  /* Header height — usado em scroll-margin-top */
+  --header-h: 84px;
+
+  /* Transições */
+  --ease: .2s ease;
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+section { scroll-margin-top: var(--header-h); }
+
+/* ============================================================
+   UTILITÁRIOS
+   ============================================================ */
+.mono      { font-family: var(--font-mono); }
+.flex-center { display: flex; align-items: center; justify-content: center; }
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cypress);
+  opacity: 0.8;
+}
+
+/* ============================================================
+   BOTÕES
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap-sm);
+  min-height: 48px;
+  padding: 11px 20px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background var(--ease), transform var(--ease), color var(--ease);
+
+  /* Variante padrão (sólido) */
+  background: var(--cypress);
+  color: var(--white);
+}
+
+.btn:hover{
+    background: var(--cypress-2);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--cypress);
+  border-color: var(--cypress);
+}
+
+.btn.ghost:hover {
+  background: var(--cypress);
+  color: var(--white);
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(206,215,224,.95);
+  backdrop-filter: saturate(140%) blur(6px);
+  /* Fallback para browsers sem backdrop-filter */
+  @supports not (backdrop-filter: blur(1px)) {
+    background: var(--paper);
+  }
+  border-bottom: 1px solid var(--line);
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.brand {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1.45rem;
+  display: flex;
+  align-items: baseline;
+  gap: var(--gap-sm);
+}
+
+.brand span {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--brass);
+  letter-spacing: 0.08em;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  font-size: 0.92rem;
+  color: var(--ink);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: border-color var(--ease);
+}
+
+nav a:hover { border-color: var(--brass); }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--ink);
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{
+    padding:48px 0;
+    background:linear-gradient(
+        to bottom,
+        #eef2f6,
+        #f7f9fb
+    );
+    border-radius:10px;
+}
+
+/* Grade base — variantes nomeadas herdam isto */
+.hero-grid,
+.hero-grid-2,
+.hero-grid-dupla {
+  display: grid;
+  gap: 6px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.hero-grid-pdf{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+}
+
+.pdf-preview{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    transition:.3s;
+    position:relative;
+}
+
+.pdf-preview::before{
+    content:"PDF";
+    position:absolute;
+    top:12px;
+    right:12px;
+    background:#d62828;
+    color:white;
+    padding:4px 10px;
+    border-radius:20px;
+    font-size:.75rem;
+    font-weight:600;
+}
+
+.pdf-preview:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+}
+
+.pdf-preview img{
+    width:100%;
+    height:420px;
+    object-fit:contain;
+    background:#fff;
+}
+
+.pdf-legenda{
+padding:18px;
+text-align:center;
+
+}
+
+.pdf-legenda h3{
+margin-bottom:8px;
+
+}
+
+.pdf-legenda p{
+color:var(--cypress);
+font-weight:600;
+margin:0;
+}
+
+.hero-grid       { grid-template-columns: 1.5fr 1fr; }
+.hero-grid-2     { grid-template-columns: 2fr 1fr; }
+.hero-grid-dupla { grid-template-columns: 1.5fr 1fr; }
+
+.hero-main { grid-row: span 2; }
+
+.hero-thumbs {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 6px;
+}
+
+/* Slots de foto */
+.foto-slot {
+  position: relative;
+  background: var(--sand);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  cursor: pointer;
+}
+
+.foto-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+.foto-slot:hover img { transform: scale(1.04); }
+
+/* Placeholder quando a foto ainda não foi adicionada */
+.foto-slot.sem-foto img { display: none; }
+
+.foto-slot.sem-foto::after {
+  content: attr(data-placeholder);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--cypress);
+  opacity: 0.55;
+  background: repeating-linear-gradient(
+  135deg,
+  var(--sand),
+  var(--sand) 10px,
+  var(--paper-2) 10px,
+  var(--paper-2) 20px
+  );
+}
+
+/* Overlay "ver mais" */
+.more-photos { position: relative; }
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .55);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Foto grande no grid duplo */
+.hero-grid-dupla .foto-slot {
+  height: 520px;
+  aspect-ratio: auto;
+}
+
+.pdf-card{
+    height:340px;
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:6px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    transition:.25s;
+}
+
+.pdf-card:hover{
+    transform:translateY(-4px);
+    border-color:var(--cypress);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.pdf-icon{
+    font-size:70px;
+    margin-bottom:25px;
+}
+
+.pdf-card h3{
+    margin-bottom:18px;
+}
+
+.pdf-card span{
+    color:var(--cypress);
+    font-weight:600;
+}
+
+/* Info abaixo das fotos */
+.hero-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: var(--gap-md);
+  padding: 28px 0 40px;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-info h1 {
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+  line-height: 1.08;
+  max-width: 600px;
+}
+
+.hero-info h1 em {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--cypress);
+}
+
+.hero-loc {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: var(--cypress-2);
+}
+
+.price-tag { text-align: right; }
+
+.price-tag .label { font-size: 0.8rem; color: var(--brass); }
+
+.price-tag .value {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 3.4vw, 2.2rem);
+  font-weight: 600;
+}
+
+/* ============================================================
+   FICHA TÉCNICA
+   ============================================================ */
+.ficha-wrap {
+  padding: var(--gap-xl) 0;
+}
+
+.ficha-head { margin-bottom: 28px; }
+
+.ficha {
+  position: relative;
+  border: 1px solid var(--line);
+  background: var(--white);
+  padding: 50px 44px;
+  border-radius: 2px;
+}
+
+/* Marcadores de canto */
+.tick {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+}
+
+.tick-tl { top: -1px;    left: -1px;  border-top:    2px solid var(--brass); border-left:   2px solid var(--brass); }
+.tick-tr { top: -1px;    right: -1px; border-top:    2px solid var(--brass); border-right:  2px solid var(--brass); }
+.tick-bl { bottom: -1px; left: -1px;  border-bottom: 2px solid var(--brass); border-left:   2px solid var(--brass); }
+.tick-br { bottom: -1px; right: -1px; border-bottom: 2px solid var(--brass); border-right:  2px solid var(--brass); }
+
+.ficha-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 48px;
+}
+
+.ficha-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Remove borda das últimas duas linhas de cada coluna */
+.ficha-row:last-child,
+.ficha-row:nth-last-child(2):nth-child(odd){
+    border-bottom:none;
+}
+
+.ficha-label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cypress-2);
+  opacity: 0.75;
+}
+
+.ficha-value {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.stamp {
+  position: absolute;
+  bottom: -14px;
+  right: 36px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--brass);
+  background: var(--paper);
+  padding: 4px 10px;
+  border: 1px solid var(--brass);
+  border-radius: 2px;
+  transform: rotate(-3deg);
+}
+
+/* ============================================================
+   SOBRE
+   ============================================================ */
+.sobre {
+  padding: 24px 0 var(--gap-xl);
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.sobre h2  { font-size: 1.9rem; }
+
+.sobre p {
+  font-size: 1.05rem;
+  color: var(--cypress-2);
+  max-width: 560px;
+}
+
+.sobre .destaque {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--ink);
+  margin-top: 0;
+  line-height: 1.4;
+}
+
+.sobre-imovel {
+  text-align: justify;
+  text-indent: 2em;
+  line-height: 1.6;
+  margin: 0 0 .8rem;
+}
+
+.destaque-final {
+  text-align: center;
+  text-indent: 0;
+  font-style: italic;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ============================================================
+   GALERIA
+   ============================================================ */
+.galeria { padding: 24px 0 70px; }
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap-sm);
+}
+
+.galeria-grid .foto-slot { border-radius: 2px; }
+
+/* ============================================================
+   LOCALIZAÇÃO
+   ============================================================ */
+.local-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap-md);
+  padding: 32px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.local-info h2 {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+  line-height: 1.4;
+}
+
+.local-info p {
+  margin: 0;
+  color: #506575;
+}
+
+.local-btn {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   VÍDEO
+   ============================================================ */
+.video-imovel { padding: 24px 0 70px; }
+
+.video-card {
+  position: relative;
+  max-width: 700px;
+  height: 400px;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--cypress);
+}
+
+.video-card img,
+.video-card video {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.video-overlay span {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.play-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: white;
+  color: var(--cypress);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+#videoLightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#videoLightbox.open { display: flex; }
+
+#videoCasa {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+/* ============================================================
+   LIGHTBOX DE FOTOS
+   ============================================================ */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 22, 18, 0.92);
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: var(--gap-md);
+}
+
+.lightbox.open { display: flex; }
+
+.lightbox img {
+  max-height: 90vh;
+  border-radius: 3px;
+}
+
+.lightbox .close,
+#videoLightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+#videoLightbox .close { font-size: 40px; right: 30px; }
+
+.lightbox .nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.lightbox .prev { left: 20px; }
+.lightbox .next { right: 20px; }
+.lightbox .ph-text {
+  color: var(--sand);
+  font-family: var(--font-mono);
+  text-align: center;
+}
+
+/* ============================================================
+   DOCUMENTOS
+   ============================================================ */
+.documentos { padding: 20px 0 60px; }
+
+.docs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.doc-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 180px;
+  padding: var(--gap-md);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  transition: transform var(--ease), border-color var(--ease);
+}
+
+.doc-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--brass);
+}
+
+.doc-icon {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.doc-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+.doc-btn {
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: .85rem;
+  color: var(--brass);
+}
+
+/* ============================================================
+   CONTATO
+   ============================================================ */
+.contato { padding: 24px 0 80px; }
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: var(--gap-lg);
+}
+
+.perfil {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 36px;
+}
+
+.perfil .eyebrow { margin-bottom: 14px; }
+.perfil h3      { font-size: 1.35rem; }
+.perfil .placeholder { color: var(--brass); }
+
+.perfil-list {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.97rem;
+}
+
+.perfil-list a { color: var(--cypress); }
+
+.perfil .botoes {
+  margin-top: var(--gap-md);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.proprietario         { margin-bottom: 1.25rem; }
+.proprietario h3      { margin-bottom: .35rem; }
+
+.email-contato {
+  padding-top: .75rem;
+  margin-top: .75rem;
+  border-top: 1px solid var(--line);
+}
+
+.email-contato p { margin: .2rem 0; }
+
+form {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: var(--cypress-2);
+}
+
+input,
+textarea {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 11px 13px;
+  background: var(--paper);
+  color: var(--ink);
+  margin-top: 6px;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--brass);
+  outline-offset: 1px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 28px 0 110px;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  color: var(--cypress-2);
+  opacity: 0.8;
+}
+
+/* ============================================================
+   STICKY CTA (apenas mobile — ver media query)
+   ============================================================ */
+.sticky-cta {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 60;
+  display: none;
+  gap: var(--gap-sm);
+  padding: 10px 14px;
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+}
+
+.sticky-cta .btn { flex: 1; justify-content: center; }
+
+/* ============================================================
+   IMOVEL WRAPPER
+   ============================================================ */
+.imovel { max-width: 900px; margin: 0 auto; }
+
+/* ============================================================
+   MOTION PREFERENCE
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+
+/* ============================================================
+   RESPONSIVO — breakpoint único: ≤ 880px
+   ============================================================ */
+@media (max-width: 880px) {
+
+  /* Wrap */
+  .wrap { padding: 0 18px; }
+
+  /* Header */
+  .header-row  { flex-direction: column; gap: 12px; }
+  .nav-toggle  { display: block; }
+  nav          { gap: 12px; overflow-x: auto; font-size: .85rem; }
+
+  /* Hero grids */
+  .hero-grid,
+  .hero-grid-2,
+  .hero-grid-dupla { grid-template-columns: 1fr; }
+
+  .hero-main              { grid-row: auto; }
+  .hero-thumbs            { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+  .hero-grid-dupla .foto-slot { height: 260px; }
+
+  /* Hero info */
+  .hero-info              { padding: 20px 0 30px; }
+  .hero-info h1           { font-size: 1.8rem; line-height: 1.15; }
+  .hero-loc               { font-size: .95rem; }
+  .price-tag              { text-align: left; width: 100%; }
+
+  /* Galeria */
+  .galeria-grid{ grid-template-columns:repeat(2, 1fr); }
+
+  /* Ficha */
+  .ficha                  { padding: 25px 18px; }
+/* Ficha */
+  .ficha-grid{grid-template-columns:1fr;}
+
+  .ficha-row{border-bottom:1px solid var(--line) !important;}
+
+  .ficha-row:last-child{border-bottom:none !important;}
+
+  /* Sobre */
+  .sobre { grid-template-columns: 1fr; gap: 28px; }
+
+  /* Localização */
+  .local-box              { flex-direction: column; align-items: flex-start; padding: 20px; }
+  .local-info h2          { font-size: 1.1rem; }
+  .local-btn              { width: 100%; text-align: center; justify-content: center; }
+
+  /* Vídeo */
+  .video-card             { height: 240px; }
+
+  /* Documentos */
+  .docs-grid              { grid-template-columns: 1fr; }
+
+  /* Contato */
+  .contato-grid           { grid-template-columns: 1fr; }
+
+  /* Lightbox */
+  .lightbox .nav          { font-size: 2rem; }
+  .lightbox .prev         { left: 10px; }
+  .lightbox .next         { right: 10px; }
+
+  /* Sticky CTA + footer padding */
+  .sticky-cta             { display: flex; }
+  footer                  { padding-bottom: 140px; }
+
+  .hero-grid-pdf{
+
+  grid-template-columns:1fr;
+
+  }
+
+  .pdf-preview img{
+
+  height:300px;
+
+  }
+
+}
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header>
+  <div class="wrap header-row">
+    <div class="brand">
+      Casa no Bairro Esmeralda <span>VENDA DIRETA</span>
+    </div>
+    <nav>
+      <a href="#detalhes">Detalhes</a>
+      <a href="#fotos">Galeria</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero">
+<div class="hero-grid-pdf">
+
+    <a href="pdfs/folder.pdf"
+       target="_blank"
+       class="pdf-preview">
+
+        <img src="fotos/folder.jpg" alt="Folder do imóvel">
+
+        <div class="pdf-legenda">
+            <h3>Folder do imóvel</h3>
+            <p>Abrir PDF →</p>
+        </div>
+
+    </a>
+
+    <a href="pdfs/material-divulgacao.pdf"
+       target="_blank"
+       class="pdf-preview">
+
+        <img src="fotos/material.jpg" alt="Material de divulgação">
+
+        <div class="pdf-legenda">
+            <h3>Material de divulgação</h3>
+            <p>Abrir PDF →</p>
+        </div>
+
+    </a>
+
+</div>
+
+    <div class="hero-info">
+      <div>
+        <h1>Imóvel no Loteamento Siena</h1>
+        <p class="hero-loc">Bairro Esmeralda, Cascavel – PR</p>
+      </div>
+      <div class="price-tag">
+        <div class="label mono">Venda</div>
+        <div class="value">R$ 355.000,00</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FICHA TÉCNICA
+       ============================================================ -->
+  <section class="ficha-wrap" id="detalhes">
+    <div class="ficha-head">
+      <p class="eyebrow">Ficha do imóvel</p>
+    </div>
+ 
+    <div class="ficha">
+      <span class="tick tick-tl"></span>
+      <span class="tick tick-tr"></span>
+      <span class="tick tick-bl"></span>
+      <span class="tick tick-br"></span>
+ 
+      <div class="ficha-grid">
+        <div class="ficha-row">
+          <span class="ficha-label">Área do terreno</span>
+          <span class="ficha-value">105,625 m²</span>
+        </div>
+        <div class="ficha-row">
+          <span class="ficha-label">Área construída</span>
+          <span class="ficha-value">63,26 m²</span>
+        </div>
+        <div class="ficha-row">
+          <span class="ficha-label">Dormitórios</span>
+          <span class="ficha-value">1 suíte + 1 quarto</span>
+        </div>
+        <div class="ficha-row">
+          <span class="ficha-label">Banheiros</span>
+          <span class="ficha-value">2</span>
+        </div>
+        <div class="ficha-row">
+          <span class="ficha-label">Garagem descoberta</span>
+          <span class="ficha-value">2 veículos</span>
+        </div>
+        <div class="ficha-row">
+          <span class="ficha-label">Área gourmet</span>
+          <span class="ficha-value">Sim</span>
+        </div>
+        </div><!-- /.ficha-grid -->
+    </div><!-- /.ficha -->
+  </section>
+
+  <!-- ============================================================
+       SOBRE O IMÓVEL
+       ============================================================ -->
+  <section class="imovel">
+    <div class="ficha-head">
+      <p class="eyebrow">Sobre o imóvel</p>
+      <h2>Direto com o proprietário<br></h2>
+    </div>
+
+    <p class="sobre-imovel">
+      As residências foram projetadas para oferecer ótima iluminação natural,
+      integração dos ambientes e excelente aproveitamento dos espaços internos e externos.
+    </p>
+    <p class="sobre-imovel">
+      Um dos grandes destaques é a sala ampla com pé-direito elevado de 4 metros de altura,
+      proporcionando maior sensação de amplitude, conforto e sofisticação. A cozinha integrada,
+      a área gourmet e a varanda frontal compõem um ambiente agradável e funcional,
+      ideal para receber amigos e familiares e aproveitar os momentos do dia a dia.
+    </p>
+    <p class="sobre-imovel">
+      O acabamento foi executado com atenção aos detalhes, incluindo piso em porcelanato,
+      revestimentos até o teto nas áreas molhadas, molduras em gesso em todos os cômodos,
+      teto da sala rebaixado em gesso com iluminação em LED e iluminação em LED em toda a residência.
+      Na área externa, o imóvel conta com textura lisa e pintura em tinta emborrachada,
+      proporcionando maior durabilidade e proteção.
+    </p>
+    <p class="sobre-imovel">
+      A construção conta ainda com laje, instalações elétricas executadas dentro das especificações técnicas,
+      utilizando cabos flexíveis das melhores marcas certificadas do mercado,  além de preparação elétrica em 
+      220V para ar-condicionado na sala e nos dois quartos, nos dois chuveiros e para torneira elétrica na cozinha. 
+      Todas as janelas possuem vidros temperados fumê, enquanto a porta da cozinha é confeccionada em vidro
+      temperado incolor. O imóvel dispõe também de garagem descoberta para dois veículos de grande porte,
+      com espaço suficiente para até duas picapes, oferecendo mais praticidade aos futuros moradores.
+    </p>
+    <p class="destaque-final">
+      Projeto moderno, ambientes amplos e acabamento pensado para quem busca conforto e praticidade.
+    </p>
+  </section>
+
+  <!-- ============================================================
+       DOCUMENTAÇÃO
+       ============================================================ -->
+  <section class="documentos">
+    <div class="ficha-head">
+      <p class="eyebrow">Documentação</p>
+      <h2>Projetos e documentos</h2>
+    </div>
+
+    <div class="docs-grid">
+      <a href="pdfs/prancha-aprovada.pdf" target="_blank" rel="noopener" class="doc-card">
+        <div class="doc-icon">📄</div>
+        <h3>Prancha Aprovada Definitiva</h3>
+        <span class="doc-btn">Abrir PDF →</span>
+      </a>
+      <a href="pdfs/projeto-executivo.pdf" target="_blank" rel="noopener" class="doc-card">
+        <div class="doc-icon">📐</div>
+        <h3>Projeto Arquitetônico Executivo</h3>
+        <span class="doc-btn">Abrir PDF →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALERIA
+       ============================================================ -->
+  <section class="galeria" id="fotos">
+    <div class="ficha-head">
+      <p class="eyebrow">Galeria</p>
+      <h2>Conheça cada ambiente</h2>
+    </div>
+
+    <div class="galeria-grid">
+      <div class="foto-slot" data-index="0">
+        <img src="fotos/foto3.jpg" alt="Fachada">
+      </div>
+      <div class="foto-slot" data-index="1">
+        <img src="fotos/foto4.jpg" alt="Sala">
+      </div>
+      <div class="foto-slot" data-index="2">
+        <img src="fotos/foto5.jpg" alt="Cozinha">
+      </div>
+      <div class="foto-slot more-photos" data-index="3">
+        <img src="fotos/foto6.jpg" alt="Quarto">
+        <div class="overlay"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LIGHTBOX DE FOTOS
+       ============================================================ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de fotos">
+    <button class="close" id="lightbox-close" aria-label="Fechar">&times;</button>
+    <button class="nav prev" aria-label="Foto anterior">&#8249;</button>
+    <div id="lightbox-content"></div>
+    <button class="nav next" aria-label="Próxima foto">&#8250;</button>
+  </div>
+
+  <!-- ============================================================
+       VÍDEO
+       ============================================================ -->
+
+  <section class="video-imovel">
+    <div class="video-card" id="abrirVideo" role="button" tabindex="0" aria-label="Assistir vídeo da casa">
+      <video id="videoPreview" muted preload="metadata">
+        <source src="videos/casa.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay">
+        <div class="play-circle">
+          <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 5v14l11-7z" fill="currentColor"/>
+          </svg>
+        </div>
+        <span>Assistir vídeo da casa</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox de vídeo (separado do lightbox de fotos) -->
+  <div id="videoLightbox" role="dialog" aria-modal="true" aria-label="Vídeo da casa">
+    <button class="close" id="fecharVideo" aria-label="Fechar vídeo">&times;</button>
+    <video id="videoCasa" controls>
+      <source src="videos/casa.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- ============================================================
+       LOCALIZAÇÃO
+       ============================================================ -->
+  <section id="localizacao">
+    <div class="ficha-head">
+      <p class="eyebrow">Localização</p>
+    </div>
+
+    <div class="local-box">
+      <div class="local-info">
+        <h2>Rua José Nunes, casas nº 84 e nº 94,<br>Loteamento Siena, Cascavel – PR</h2>
+        <p>Consulte a localização exata pelo Google Maps.</p>
+      </div>
+      <a class="btn local-btn"
+         target="_blank"
+         rel="noopener"
+         href="https://www.google.com/maps?q=-24.9787024,-53.5124557&z=17&hl=pt-BR">
+        📍 Ver no mapa
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTATO
+       ============================================================ -->
+  <section class="contato" id="contato">
+    <div class="ficha-head">
+      <p class="eyebrow">Contato</p>
+      <h2>Vamos conversar</h2>
+    </div>
+
+    <div class="contato-grid">
+      <div class="perfil">
+        <p class="eyebrow">Proprietários</p>
+
+        <div class="proprietario">
+          <h3 class="placeholder">André</h3>
+          <p>📞 <a href="tel:+5545988132580" class="placeholder">(45) 98813-2580</a></p>
+        </div>
+
+        <div class="proprietario">
+          <h3 class="placeholder">Godoy</h3>
+          <p>📞 <a href="tel:+5545999343753" class="placeholder">(45) 99934-3753</a></p>
+        </div>
+
+        <div class="email-contato">
+          <p><strong>E-mail para contato</strong></p>
+          <p>✉️ <a href="mailto:casaidealcascavel@gmail.com" class="placeholder">casaidealcascavel@gmail.com</a></p>
+        </div>
+
+        <div class="botoes">
+          <a class="btn"
+             target="_blank"
+             rel="noopener"
+             href="https://wa.me/5545988132580?text=Ol%C3%A1!%20Vi%20o%20an%C3%BAncio%20da%20casa%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">
+            Falar no WhatsApp →
+          </a>
+        </div>
+      </div><!-- /.perfil -->
+    </div><!-- /.contato-grid -->
+  </section>
+
+</main>
+
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+(function () {
+  'use strict';
+
+  /* ----------------------------------------------------------
+     DADOS — ajuste os caminhos das fotos conforme necessário
+     ---------------------------------------------------------- */
+  const fotosHero = [
+    'fotos/foto1.jpg',
+    'fotos/foto2.jpg',
+  ];
+
+  const fotosGaleria = [
+  'fotos/foto3.jpg',
+  'fotos/foto4.jpg',
+  'fotos/foto5.jpg',
+  'fotos/foto6.jpg',
+  'fotos/foto7.jpg',
+  'fotos/foto8.jpg',
+  'fotos/foto9.jpg',
+  'fotos/foto10.jpg',
+  'fotos/foto11.jpg',
+  'fotos/foto12.jpg',
+  'fotos/foto13.jpg',
+  'fotos/foto14.jpg',
+  'fotos/foto15.jpg',
+];
+
+/* ----------------------------------------------------------
+   CONTADOR AUTOMÁTICO DE FOTOS
+   ---------------------------------------------------------- */
+const overlayFotos = document.querySelector('.more-photos .overlay');
+
+if (overlayFotos) {
+  const fotosExibidas = 4; // quantidade de miniaturas na galeria
+  const restantes = fotosGaleria.length - fotosExibidas;
+
+  if (restantes > 0) {
+    overlayFotos.textContent = `+${restantes + 1} fotos`;
+  } else {
+    overlayFotos.style.display = 'none';
+  }
+}
+  /* ----------------------------------------------------------
+     LIGHTBOX DE FOTOS
+     ---------------------------------------------------------- */
+  const lightbox        = document.getElementById('lightbox');
+  const lightboxContent = document.getElementById('lightbox-content');
+  const lightboxClose   = document.getElementById('lightbox-close');
+  const btnPrev         = lightbox.querySelector('.prev');
+  const btnNext         = lightbox.querySelector('.next');
+
+  let fotoAtual  = 0;
+  let listaAtiva = fotosGaleria;
+
+  function abrirLightbox(lista, index) {
+    listaAtiva = lista;
+    fotoAtual  = index;
+    renderFoto();
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    lightboxClose.focus();
+  }
+
+  function fecharLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function renderFoto() {
+    lightboxContent.innerHTML =
+      `<img src="${listaAtiva[fotoAtual]}" alt="Foto ${fotoAtual + 1}">`;
+  }
+
+  function navegar(direcao) {
+    fotoAtual = (fotoAtual + direcao + listaAtiva.length) % listaAtiva.length;
+    renderFoto();
+  }
+
+  document.querySelectorAll('[data-hero]').forEach(slot => {
+    slot.addEventListener('click', () =>
+      abrirLightbox(fotosHero, Number(slot.dataset.hero))
+    );
+  });
+
+  document.querySelectorAll('.galeria .foto-slot').forEach(slot => {
+    slot.addEventListener('click', () =>
+      abrirLightbox(fotosGaleria, Number(slot.dataset.index ?? 0))
+    );
+  });
+
+  btnPrev.addEventListener('click', () => navegar(-1));
+  btnNext.addEventListener('click', () => navegar(+1));
+  lightboxClose.addEventListener('click', fecharLightbox);
+
+  lightbox.addEventListener('click', e => { if (e.target === lightbox) fecharLightbox(); });
+
+  document.addEventListener('keydown', e => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape')     fecharLightbox();
+    if (e.key === 'ArrowLeft')  navegar(-1);
+    if (e.key === 'ArrowRight') navegar(+1);
+  });
+
+  /* ----------------------------------------------------------
+     LIGHTBOX DE VÍDEO
+     ---------------------------------------------------------- */
+  const btnAbrirVideo  = document.getElementById('abrirVideo');
+  const videoLightbox  = document.getElementById('videoLightbox');
+  const btnFecharVideo = document.getElementById('fecharVideo');
+  const videoCasa      = document.getElementById('videoCasa');
+
+  function abrirVideo() {
+    videoLightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    videoCasa.play();
+  }
+
+  function fecharVideo() {
+    videoCasa.pause();
+    videoCasa.currentTime = 0;
+    videoLightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  btnAbrirVideo?.addEventListener('click', abrirVideo);
+  btnAbrirVideo?.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrirVideo(); }
+  });
+  btnFecharVideo?.addEventListener('click', fecharVideo);
+  videoLightbox?.addEventListener('click', e => { if (e.target === videoLightbox) fecharVideo(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && videoLightbox?.classList.contains('open')) fecharVideo();
+  });
+
+})();
+</script>
+
+</body>
+</html>
