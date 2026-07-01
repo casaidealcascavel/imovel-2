@@ -160,16 +160,40 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 0;
+  padding:22px 0 18px;
 }
 
-.brand {
-  font-family: var(--font-serif);
-  font-weight: 600;
-  font-size: 1.45rem;
-  display: flex;
-  align-items: baseline;
-  gap: var(--gap-sm);
+.brand{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:8px;
+    width:100%;
+}
+
+.brand-title{
+    margin:0;
+    font-family:var(--font-serif);
+    font-size:2rem;
+    font-weight:600;
+    line-height:1.1;
+    color:var(--ink);
+}
+
+.brand-subtitle{
+    font-family:var(--font-mono);
+    font-size:.80rem;
+    letter-spacing:.20em;
+    text-transform:uppercase;
+    color:var(--cypress);
+    opacity:.95;
+}
+
+.brand-line{
+    width:100%;
+    height:1px;
+    background:rgba(36,52,68,.12); /* mesma cor usada nas bordas */
+    margin-top:10px;
 }
 
 .brand span {
@@ -907,7 +931,7 @@ footer {
   .wrap { padding: 0 18px; }
 
   /* Header */
-  .header-row  { flex-direction: column; gap: 12px; }
+  .header-row  { flex-direction: column; gap: 20px; }
   .nav-toggle  { display: block; }
   nav          { gap: 12px; overflow-x: auto; font-size: .85rem; }
 
@@ -976,6 +1000,11 @@ footer {
 
   }
 
+  .brand-title{
+       white-space: nowrap;
+      font-size: clamp(1.5rem, 5vw, 1.6rem);
+  }
+
 }
   </style>
 </head>
@@ -987,7 +1016,13 @@ footer {
 <header>
   <div class="wrap header-row">
     <div class="brand">
-      Casa no Bairro Esmeralda <span>VENDA DIRETA</span>
+        <h1 class="brand-title">Casa no Bairro Esmeralda</h1>
+
+        <div class="brand-subtitle">
+            VENDA DIRETA
+        </div>
+
+        <div class="brand-line"></div>
     </div>
     <nav>
       <a href="#detalhes">Detalhes</a>
@@ -1231,7 +1266,7 @@ footer {
       <a class="btn local-btn"
          target="_blank"
          rel="noopener"
-         href="https://www.google.com/maps?q=-24.9787024,-53.5124557&z=17&hl=pt-BR">
+         href="https://www.google.com/maps?q=-24.9816287,-53.5122366&z=17&hl=pt-BR">
         📍 Ver no mapa
       </a>
     </div>
