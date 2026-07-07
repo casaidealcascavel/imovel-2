@@ -1390,10 +1390,21 @@ if (overlayFotos) {
   function renderFoto() {
     lightboxContent.innerHTML =
       `<img src="${listaAtiva[fotoAtual]}" alt="Foto ${fotoAtual + 1}">`;
+
+    /* Esconde a seta da esquerda na primeira foto */
+    btnPrev.style.display = fotoAtual === 0 ? 'none' : 'block';
+
+    /* Esconde a seta da direita na última foto */
+    btnNext.style.display = fotoAtual === listaAtiva.length - 1 ? 'none' : 'block';
   }
 
   function navegar(direcao) {
-    fotoAtual = (fotoAtual + direcao + listaAtiva.length) % listaAtiva.length;
+    const novoIndice = fotoAtual + direcao;
+
+    /* Impede passar da primeira ou da última foto */
+    if (novoIndice < 0 || novoIndice >= listaAtiva.length) return;
+
+    fotoAtual = novoIndice;
     renderFoto();
   }
 
