@@ -759,23 +759,16 @@ margin:0;
 }
 
 /* Evita seleção azul / destaque ao clicar ou arrastar na galeria e lightbox */
-.galeria,
-.galeria *,
-.lightbox,
-.lightbox *,
-.foto-slot,
-.foto-slot img,
-.lightbox img,
-.lightbox .nav,
-.lightbox .close {
+.lightbox.open,
+.lightbox.open * {
   -webkit-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
 
-.lightbox .nav,
-.lightbox .close,
-.foto-slot {
+.lightbox.open .nav,
+.lightbox.open .close,
+.lightbox.open img {
   -webkit-touch-callout: none;
 }
 
@@ -1250,7 +1243,6 @@ footer {
            PREVISÃO DE CONCLUSÃO DAS 2 CASAS EM JANEIRO/2027
         </div>
     </div>
-
 
     <div class="galeria-grid">
       <div class="foto-slot" data-index="0">
